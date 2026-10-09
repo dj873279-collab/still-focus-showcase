@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Still — a calm, interactive focus-session showcase.">
+  <title>Still — Find your quiet</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body data-theme="sage">
+  <main class="page-shell">
+    <nav class="topbar" aria-label="Main navigation">
+      <a class="wordmark" href="#" aria-label="Still home">still<span>.</span></a>
+      <span class="nav-note">A little space to focus</span>
+      <a class="nav-link" href="#experience">The experience <span aria-hidden="true">↗</span></a>
+    </nav>
+
+    <section class="hero" id="experience">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR SPACE, YOUR PACE</p>
+        <h1>Find your<br><em>quiet.</em> Still.</h1>
+        <p class="intro">Make room for what matters. A calmer little corner for one task, one breath, and one moment at a time.</p>
+        <a class="primary-button" href="#themes">Explore Still <span aria-hidden="true">↘</span></a>
+        <p class="microcopy">Less noise. More intention.</p>
+      </div>
+
+      <div class="product-stage" aria-label="Interactive focus timer preview">
+        <div class="ambient ambient-one"></div>
+        <div class="ambient ambient-two"></div>
+        <div class="timer-card">
+          <div class="timer-topline">
+            <span class="live-dot"></span><span>FOCUS SESSION</span>
+            <button class="info-button" id="info-open" aria-label="About focus sessions" aria-haspopup="dialog" aria-controls="info-dialog">i</button>
+          </div>
+          <div class="timer-ring">
+            <div class="timer-inner">
+              <span class="timer-label">TIME TO FOCUS</span>
+              <strong id="timer-display">25:00</strong>
+              <span class="timer-status" id="timer-status">A fresh start</span>
+            </div>
+          </div>
+          <div class="timer-actions">
+            <button class="timer-button" id="timer-toggle">Begin session <span aria-hidden="true">→</span></button>
+            <button class="reset-button" id="timer-reset" aria-label="Reset timer">↺</button>
+          </div>
+          <div class="timer-foot"><span>ONE THING AT A TIME</span><span>STILL / 001</span></div>
+        </div>
+        <div class="floating-note"><span class="note-icon">✳</span><span><b>Take a breath.</b><small>You’re right where you need to be.</small></span></div>
+      </div>
+    </section>
+
+    <section class="theme-section" id="themes">
+      <div class="section-heading">
+        <div><p class="eyebrow">MAKE IT YOURS</p><h2>A mood for <em>your mind.</em></h2></div>
+        <p>Choose a palette that helps you settle in. Your space changes with you.</p>
+      </div>
+      <div class="theme-picker" role="group" aria-label="Choose a colour theme">
+        <button class="theme-option active" data-theme-choice="sage" aria-pressed="true"><span class="swatch swatch-sage"></span><span><b>Sage</b><small>Grounded & gentle</small></span><span class="check">✓</span></button>
+        <button class="theme-option" data-theme-choice="sand" aria-pressed="false"><span class="swatch swatch-sand"></span><span><b>Sand</b><small>Warm & open</small></span><span class="check">✓</span></button>
+        <button class="theme-option" data-theme-choice="mist" aria-pressed="false"><span class="swatch swatch-mist"></span><span><b>Mist</b><small>Clear & quiet</small></span><span class="check">✓</span></button>
+      </div>
+    </section>
+
+    <footer class="footer"><a class="wordmark" href="#">still<span>.</span></a><span>Made for a little more presence.</span><span>PAUSE. BREATHE. BEGIN.</span></footer>
+  </main>
+
+  <dialog class="info-dialog" id="info-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" id="info-close" aria-label="Close information">×</button>
+    <span class="dialog-mark">ⓘ</span>
+    <p class="eyebrow">A NOTE ON FOCUS</p>
+    <h2 id="dialog-title">Focus sessions</h2>
+    <p>Create space for one task at a time, with fewer distractions. Begin when you’re ready, and take a break when you need one.</p>
+    <button class="primary-button dialog-ok" id="info-done">Sounds good <span aria-hidden="true">→</span></button>
+  </dialog>
+</body>
+</html>
