@@ -14,6 +14,8 @@ An interactive, responsive focus-app showcase inspired by the Still concept crea
 ## Run locally
 No build step is needed. Open `index.html` in a browser, or use a simple local server such as VS Code Live Server.
 
+<img width="328" height="290" alt="image" src="https://github.com/user-attachments/assets/a7cf97c5-09d9-40a3-8420-27dd9c138664" />
+
 ## Project structure
 - `index.html` — page content and structure
 - `css/styles.css` — responsive layout, visual styles, and theme variables
